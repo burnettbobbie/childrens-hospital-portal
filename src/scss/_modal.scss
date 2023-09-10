@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal--mask {
+    background-color: rgba(0, 0, 0, 0.737);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9998;
+  
+  .modal-window {
+    min-width: 40%;
+    max-width: 90vw;
+    max-height: 100vh;
+    border-radius: 10px;
+    border: solid 2px white;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    padding: 0.2rem;
+
+  }
+  
+  .modal--header,
+  .modal--body,
+  .modal--footer {
+
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    background: linear-gradient(to right,#000d31, #011652, rgba(0, 25, 99, 0.9803921569), #011652,#000d31,);
+    .modal-text{
+      padding: 0.2em;
+    }
+    iframe{
+      margin: 0.3rem;
+      border-radius: 20px;
+      border: white 2px solid;
+      box-shadow: 0px 3px 11px 2px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 0px 3px 11px 2px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 3px 11px 2px rgba(0,0,0,0.75);
+    }
+  }
+  
+  .modal--header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3.6em;
+    font-family: 'Vampiro One', cursive;
+    color:#E00025;
+    text-shadow: 2px 5px 0px #FFCE42;
+  }
+  
+  .modal--footer {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1rem;
+  }
+ 
+.modal-close{
+    background-color: white;
+    -webkit-box-shadow: inset 0px 0px 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 7px 1px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 7px 1px rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color:#000d31;
+    &:hover{
+    -webkit-box-shadow: inset 0px 0px 7px 1px rgba(0, 0, 0, 0.934);
+    -moz-box-shadow:  inset 0px 0px 7px 1px rgba(0, 0, 0, 0.934);
+    box-shadow: inset 0px 0px 7px 1px rgba(0, 0, 0, 0.934);
+    background-color:#FFCE42;
+    color: #001963d3;
+    font-weight: 900;
+    transition: 0.5s ease;
+    }
+    &:not(:hover){
+      transition: 0.5s ease;
+      }
+    &:active{
+    transform: scale(0.9);
+    }
+}
+
+.modal-vid{
+    width: 300px;
+    height: 200px;
+    margin: 2em;
+    
+}
+
+.map-modal{
+    background-image: url(../images/mobile-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90vw;
+    height: 95vh;
+    .map-type{
+    background-image: url(../images/map-portrait.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    }
+    .modal-close{
+      background-color: #ffffff;
+      -webkit-box-shadow: inset 0px 0px 7px 1px rgba(0,0,0,0.75);
+      -moz-box-shadow: inset 0px 0px 7px 1px rgba(0,0,0,0.75);
+      box-shadow: inset 0px 0px 7px 1px rgba(0,0,0,0.75);
+      padding: 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      color:#001963f3;
+      font-size: 1em;
+      font-weight: 600;
+      &:hover{
+      -webkit-box-shadow: inset 0px 0px 7px 1px rgba(0, 0, 0, 0.934);
+      -moz-box-shadow:  inset 0px 0px 7px 1px rgba(0, 0, 0, 0.934);
+      box-shadow: inset 0px 0px 7px 1px rgba(0, 0, 0, 0.934);
+      background-color:#2e499b;
+      color: white;
+      transition: 0.5s ease;
+    }
+    &:not(:hover){
+      transition: 0.5s ease;
+      }
+      &:active{
+      transform: scale(0.9);
+      }
+  
+  }
+}
+}
+  
+@media only screen and (min-width: 922px){
+
+    .modal--mask{
+      .modal-window{
+        overflow: hidden;
+      }
+      .map-modal{
+          background-image: url(../images/big-map.png);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .map-type{
+            background-image: url(../images/map-landscape.png);
+            width: 90%;
+            height: 80%;
+          }
+      }
+      .modal--header,
+      .modal--body,
+      .modal--footer {
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        max-width: 90vw;
+        max-height: 70vh;
+        
+        .modal-text{
+          max-width: 40vw;
+          margin: 10px;
+          font-size: 1.1em;
+          line-height: 20px;
+        }
+      }
+      .modal-vid{
+        width: 560px;
+        height: 315px;
+        margin: 0;
+    }
+      img{
+        width: 400px;
+        height: 300px;
+        margin: 15px;
+        border:white 5px solid; 
+        box-shadow: 0px 3px 11px 2px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 3px 11px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 3px 11px 2px rgba(0,0,0,0.75);
+      
+      }
+      #croom{
+        width: 400px;
+        height: 300px;
+      }
+    }
+
+    
+
+}

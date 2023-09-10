@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
+
+.entertainment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+.chat-card{
+    max-width: 60vw;
+    min-height: 30vh;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    -webkit-box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.75);
+    h1{
+        font-family: 'Vampiro One', cursive;
+        color: #020a20;
+        font-size: 2.7em;
+        text-shadow: 2px 5px 0px #FFCE42;
+    }
+    padding: 20px;
+    border-radius: 20px;
+.chat-form{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .chat-input{
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        margin: 10px;
+        width: 50vw;
+        height: 20vh;
+        text-align: center;
+        background-color: white;
+        -webkit-box-shadow: inset 2px 4px 12px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 2px 4px 12px 0px rgba(0,0,0,0.75);
+        box-shadow: inset 2px 4px 12px 0px rgba(0,0,0,0.75);
+        outline: none;
+        &:active{
+            border: white solid 4px;
+            
+        }
+        &:focus{
+            border: white solid 4px;
+
+        }
+    
+  
+    }
+    .response-container{
+        padding: 10px;
+        .chat-response{
+            font-size: 0.8em;
+            padding:10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
+    .chat-btn{
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        text-transform: uppercase;
+        background-color: white;
+        margin: 10px;
+        font-weight: 700;
+        -webkit-box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.75);
+        box-shadow: 2px 4px 12px 0px rgba(0,0,0,0.75);
+        &:active{
+            transform: scale(0.9);
+            
+        }
+      
+    }
+}
+}
+#youtube{
+    width: 200px;
+    height: 150px;
+
+    &:hover{
+        transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
+        transition: all .6s ease;
+     
+    }
+
+    &:not(:hover){
+
+      transition: all .6s ease;
+
+    }
+   
+    &:active{
+        background-color: white;
+        mask-clip: content-box;
+        border-radius: 50px;
+        
+    }
+
+}
+}
+
+
+
+
+//tablet general
+@media (min-width: 768px){
+    #youtube{
+        width: 300px;
+        height: 250px;
+    }
+}

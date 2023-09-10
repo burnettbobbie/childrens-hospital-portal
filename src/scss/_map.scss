@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
+
+*{
+    font-family:"Varela Round", sans-serif;
+    // overflow: hidden;   
+}
+.left-circle{
+    height: 15px;
+    width: 15px;
+    background-color:#e00025;
+    border-radius: 50%;
+    float: left;
+    display: flex;
+    left: 1;
+    top: 0;
+    -webkit-box-shadow: 0px 0px 3px 1px #020a20;
+    -moz-box-shadow: 0px 0px 3px 1px #020a20;
+    box-shadow: 0px 0px 3px 1px #020a20; 
+}
+
+.right-circle{
+    height: 15px;
+    width: 15px;
+    background-color:#E00025;
+    border-radius: 50%;
+    display: flex;
+    top: 0;
+    right: 1;
+    float: right;
+    -webkit-box-shadow: 0px 0px 3px 1px #020a20;
+    -moz-box-shadow: 0px 0px 3px 1px #020a20;
+    box-shadow: 0px 0px 3px 1px #020a20;
+}
+
+
+.title-heading{
+    margin: 4% 6% 0% 6%;
+    background-color:#020a20;
+    // background-image: url(   https://www.manufosela.es/shooting_stars/hori.png), url( https://www.manufosela.es/shooting_stars/stars_5.png);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    -webkit-box-shadow: inset 4px 3px 45px -4px #000000; 
+    box-shadow: inset 4px 3px 45px -4px #000000;
+    height: 7vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    h3{
+        color: white;
+        font-size: 1em;
+        font-weight: 300;
+        // text-overflow: ----;
+        white-space: nowrap;
+    /* animation properties */
+        -moz-transform: translateX(150%);
+        -webkit-transform: translateX(150%);
+        transform: translateX(150%);
+        
+        -moz-animation: my-animation 40s linear infinite;
+        -webkit-animation: my-animation 40s linear infinite;
+        animation: my-animation 40s linear infinite;
+    }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(150%); }
+    to { -moz-transform: translateX(-150%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(150%); }
+    to { -webkit-transform: translateX(-150%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(150%);
+      -webkit-transform: translateX(150%);
+      transform: translateX(150%);
+    }
+    to {
+      -moz-transform: translateX(-150%);
+      -webkit-transform: translateX(-150%);
+      transform: translateX(-150%);
+    }
+    }
+}
+.home-main{
+    background: radial-gradient(farthest-corner at 60px 60px,#FFCE42, #fed35c, #ffedbc, #fed35c,#FFCE42,);
+    padding: 20px;
+    height: 100vh;
+    overflow: hidden;  
+    position: fixed;
+    width: 100%;
+    .profile-icon{
+        border-radius: 360px;
+        border: none;
+        background-color:#31b4ed;
+        background-image: url(../images/profile-icon.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #FFCE42;
+        -webkit-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        margin-left: 3vw;
+        margin-bottom: 2vh;
+        &:hover{
+            -webkit-box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+            -moz-box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+            box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+              }
+        &:active{
+            -webkit-box-shadow: inset 4px 3px 31px -8px #000000; 
+            box-shadow: inset 4px 3px 31px -8px #000000;
+            transform: scale(0.8);
+            transition: 2s ease;
+        }
+    }
+    .home-back{
+        border-radius: 360px;
+        border: none;
+        background-color: #add1f1;
+        background-image: url(../images/back-icon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: #FFCE42;
+        -webkit-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+        font-weight: 900;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        margin-left: 2vw;
+        margin-bottom: 2vh;
+        &:hover{
+            -webkit-box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+            -moz-box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+            box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+              }
+        &:active{
+            -webkit-box-shadow: inset 4px 3px 31px -8px #000000; 
+            box-shadow: inset 4px 3px 31px -8px #000000;
+            transform: scale(0.8);
+            transition: 0.2s ease;
+        }
+    }
+}
+    .home-body{
+        // background-color:#020a20;
+        background-image: url(   https://www.manufosela.es/shooting_stars/hori.png), url( https://www.manufosela.es/shooting_stars/stars_5.png);
+        border-radius: 20px;
+        -webkit-box-shadow: inset 4px 3px 45px -4px #000000; 
+        box-shadow: inset 4px 3px 45px -4px #000000;
+        height: 77vh;
+        margin: 2% 6% 2% 6%;   
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+        .hospital-mobile{
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+            .mobile-modals{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 2vh;
+        
+                div{
+                    color: white;
+                    text-decoration: none;
+                    margin: 5px;
+                }
+            }
+            
+        }
+
+        .starback{
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../images/star.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 80vw; 
+            display: none;  
+        }
+
+
+        .didYouKnow{
+            height: 380px;
+            width: 380px;
+            background-image: url(../images/DYK.png);
+            display: none;
+            .dyk-container{
+                height: 90vh;
+                width: 500px;
+                display: none;
+                padding: 40px;          
+                h4{      
+                    color: white;
+                    text-align: justify;                                     
+                }
+                p{
+                    color: white;
+                    padding-top: 10px;
+                    text-align: justify;
+                }
+            }
+        }
+
+        .dyk-mobile{
+            display: block;
+            color: white;
+            align-items: center;
+            background-color: black;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 15px;
+            margin-top: 10px;
+            border-top: #FFCE42 2px solid;
+            border-bottom: #FFCE42 2px solid;
+            height: 15vh;
+            h2{
+                font-size: 1em;
+            }
+
+        }
+        
+        .treatment-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+            margin: 5vw;
+            .treatment{
+            height: 100%;
+            width: 100%;
+            margin: 1vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                h1{
+                    font-family: 'Vampiro One', cursive;
+                    color: white;
+                    font-size: 1.7em;
+                    text-shadow: 2px 5px 0px #E00025;
+                    cursor: pointer;
+                }
+        
+            }
+            .blood{
+                background-image: url(../images/blood.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .mri{
+                background-image: url(../images/mri.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .xray{
+                background-image: url(../images/xray.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+        
+        }
+
+        .bottom-nav{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            // height: 15vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            align-items: right;
+            justify-content: right;
+            // margin-bottom: 4vh;
+            .bottom-i{
+                width: 80px;
+                height: 17vh;
+                .map-icon{
+                    background-image: url(../images/map.png);
+                    background-repeat: no-repeat;
+                    width: 20vw;
+                    height: 20vh;
+                    z-index: 3;
+                    background-size: contain;
+                    cursor: pointer;
+                }
+                .console-icon{
+                    background-image: url(../images/console.png);
+                    background-repeat: no-repeat;
+                    height: 20vh;
+                    width: 20vw;
+                    z-index: 3;
+                    background-size: contain;
+                }
+
+                .tv-icon{
+                    background-image: url(../images/tv.png);
+                    background-repeat: no-repeat;
+                    height: 20vh;
+                    width: 20vw;
+                    z-index: 3;
+                    background-size: contain;
+                }
+
+            }
+        }
+    }
+
+//tablet general
+@media (min-width: 768px){
+    *{
+        overflow: visible;
+    }
+   
+    .left-circle{
+        height: 25px;
+        width: 25px;    
+    }
+
+    .right-circle{
+        height: 25px;
+        width: 25px;     
+    }
+    
+    .title-heading{
+        margin: 0% 4% 0% 4%;
+         border-radius:20px;
+         h3{
+        font-size:1.5em;
+        -moz-animation: my-animation 30s linear infinite;
+        -webkit-animation: my-animation 30s linear infinite;
+        animation: my-animation 30s linear infinite;
+        }
+   }
+
+   .home-main{
+    .profile-icon, .home-back{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 3vh;
+        margin-left: 2vw;
+     }
+    }
+    .home-body{
+        flex-direction: row;
+        margin: 2% 4% 2% 4%;
+        .hospital-mobile{
+            position: absolute;
+            top: 20vh;
+            transform: scale(1.4);
+            right: 20vw;
+            margin-bottom: 20vh;
+        }
+
+        .dyk-mobile{
+            display: none;
+        }
+        .didYouKnow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 45px;
+            position: absolute;
+            right:10vw;
+            margin-left: 10vw;
+            margin-top: 20vh;
+            .dyk-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;  
+                
+            }
+        }
+
+        .treatment-info{
+            margin-left: -40vw;
+            height: 80vh;
+            .treatment{
+                h1{
+                    font-size: 2.5em;
+                }
+            }
+        }
+
+        .bottom-nav{
+            height: 2vh;
+            margin-bottom: 20vh;
+            width: 50vw;
+            .bottom-i{
+                height: 20vh;
+                margin-right: 10vw;
+            }
+        }
+    }
+}
+
+
+//Desktop (general)
+@media (min-width: 922px){
+    .home-main{
+        .profile-icon, .home-back{
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1vh;
+            margin-left: 1vw;
+        }
+    }
+    .home-body{
+        .starback{
+            display: block;
+            margin-left: 12vw;
+        } 
+        .hospital-mobile{
+            display: none;
+        }
+
+        .dyk-mobile{
+            display: none;
+        }
+        
+        .didYouKnow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 45px;
+            position: absolute;
+            top: 4vh;
+            left:0;
+            margin-left: 6vw;
+            .dyk-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;                    
+            }
+        }
+
+        .treatment-info{
+            position: absolute;
+            right: 5vw;
+            .treatment{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                h1{
+                    font-family: 'Vampiro One', cursive;
+                    color: white;
+                    font-size: 2.3em;
+                    text-shadow: 2px 5px 0px #E00025;
+                    cursor: pointer;
+                    margin-bottom: 2vh;
+                }
+            }
+        }
+        .bottom-nav{
+            .bottom-i{
+                margin-left: -8vw;
+                height: 20vh;
+                width: 30vw;
+                margin-bottom: 20vh;
+            }
+        }
+    }
+}
+
+

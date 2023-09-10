@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+*{
+    font-family:"Varela Round", sans-serif;   
+}
+
+.title-heading{
+    margin: 0% 4% 0% 4%;
+    background-color:#020a20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 4px 3px 45px -4px #000000; 
+    box-shadow: inset 4px 3px 45px -4px #000000;
+    height: 7vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    h3{
+        color: white;
+        font-size: 1.5em;
+        font-weight: 300;
+
+    /* animation properties */
+    -moz-transform: translateX(150%);
+    -webkit-transform: translateX(150%);
+    transform: translateX(150%);
+    
+    -moz-animation: my-animation 20s linear infinite;
+    -webkit-animation: my-animation 20s linear infinite;
+    animation: my-animation 20s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(150%); }
+    to { -moz-transform: translateX(-150%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(150%); }
+    to { -webkit-transform: translateX(-150%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(150%);
+      -webkit-transform: translateX(150%);
+      transform: translateX(150%);
+    }
+    to {
+      -moz-transform: translateX(-150%);
+      -webkit-transform: translateX(-150%);
+      transform: translateX(-150%);
+    }
+  }
+}
+.patient-main{
+    background: linear-gradient(to right,#000d31, #011652, rgba(0, 25, 99, 0.9803921569), #011652,#000d31,);
+    padding: 20px;
+    height: 100vh;
+    overflow-y: hidden; 
+    .profile-icon{
+        width: 50px;
+        height: 50px;
+      }
+    .patient-body{
+        // background-color:#020a20;
+        background-image: url(   https://www.manufosela.es/shooting_stars/hori.png), url( https://www.manufosela.es/shooting_stars/stars_5.png);
+        border-radius: 20px;
+        -webkit-box-shadow: inset 4px 3px 45px -4px #000000; 
+        box-shadow: inset 4px 3px 45px -4px #000000;
+        height: 77vh;
+        margin: 2% 4% 2% 4%;   
+        overflow-y: hidden;     
+        h3{
+            color: white;
+            font-weight: 400;
+            text-align: right;
+            padding-right: 20px;
+            padding-top: 10px;
+        }
+        .patient-buttons{
+            background: url(../images/star.png);
+            background-repeat: no-repeat;
+            background-size: 90vw 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10vh;
+            .skin-changer{
+                margin: 5px;
+                height: 180px;
+                width: 180px;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;  
+                display: flex;
+                overflow: hidden; 
+                background: url('../images/default-profile.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 360px;     
+                box-shadow: -1px 1px 61px 10px rgba(255,255,255,0.94);
+                -webkit-box-shadow: -1px 1px 61px 10px rgba(255,255,255,0.94);
+                -moz-box-shadow: -1px 1px 61px 10px rgba(255,255,255,0.94);
+                &:hover{
+                    transform: perspective(400px) rotateY(25deg) scale(.8) rotateX(360deg);
+                    transition: all 2s ease;
+                }  
+                &:not(:hover){
+                    transition: all 4s ease;
+                }  
+       
+            }     
+          
+            .patient-progress{
+                button{
+                    padding: 20px;
+                    border-radius: 20px;
+                    border: none;
+                    background-color: #FFCE42;
+                    font-size: 1em;
+                    margin: 5px;
+                    color: #000d31;
+                    z-index: 5;
+                    cursor: pointer;
+                    -webkit-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+                    box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+                    transition: transform 0.3s;
+                    &:hover{
+                        -webkit-box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+                        -moz-box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+                        box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+                        transition: 1s ease;
+                    }
+                    &:not(:hover){
+                        transition: 1s ease;
+                    }
+                    &:active{
+                        -webkit-box-shadow: inset 4px 3px 31px -8px #000000; 
+                        box-shadow: inset 4px 3px 31px -8px #000000;
+                        transform: scale(0.9);
+                    }
+                }
+            }
+
+            .patient-info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                button{
+                    font-size: 0.8em;
+                    color: #000d31;
+                    padding: 15px;
+                    margin: 10px;
+                    border-radius: 20px;
+                    border: none;
+                    cursor: pointer;
+                    -webkit-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+                    -moz-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+                    box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+                    transition: transform 0.3s;
+                    &:hover {
+                        background-color: #ffda73;
+                        transition: 0.5s ease;
+                            }
+                    &:not(:hover) {
+                        transition: 0.5s ease;
+                            }        
+                    &:active {
+                        transform: scale(0.98);
+                        transition: 0.2s ease;
+                    } 
+                }
+            }              
+        }     
+    }      
+}
+
+.update-message{
+    text-align: right;
+}
+
+.patient-modal{
+    z-index: 99;
+}
+.leave-portal{
+    border-radius: 360px;
+    border: none;
+    background-color: #E00025;
+    background-image: url(../images/power-off.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFCE42;
+    -webkit-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+    font-weight: 900;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    bottom: 1vh;
+    left: 1vw;
+    z-index: 3;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    &:hover{
+        -webkit-box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+        -moz-box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+        box-shadow: 0px 0px 20px 1px rgba(255,255,255,1);
+          }
+    &:active{
+        -webkit-box-shadow: inset 4px 3px 31px -8px #000000; 
+        box-shadow: inset 4px 3px 31px -8px #000000;
+        transform: scale(0.8);
+        transition: 1s ease;
+    }
+}  
+
+
+.appointment-calendar{
+    background-image: url(../images/calendar.png);
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    z-index: 3;
+    position: absolute;
+    background-size: contain;
+    bottom: 7vh;
+    right: 0;
+    margin-right: 3vw;
+    &:hover{
+        transform: translateY(-20px);
+    }
+}
+.hosp-icon{
+    background-image: url(../images/hospIcon.webp);
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    z-index: 3;
+    position: absolute;
+    background-size: contain;
+    bottom: 7vh;
+    right: 0;
+    margin-right:20vw;
+    &:hover{
+        transform: translateY(-20px);
+    }
+}
+
+
+
+//tablet general
+@media (min-width: 768px){
+    // *{
+    //     overflow: visible;
+    // }
+   
+    .left-circle{
+        height: 25px;
+        width: 25px;    
+    }
+
+    .right-circle{
+        height: 25px;
+        width: 25px;     
+    }
+
+    .title-heading{
+        margin: 0% 4% 0% 4%;
+        border-radius:20px;
+        h3{
+        font-size:1.5em;
+        -moz-animation: my-animation 25s linear infinite;
+        -webkit-animation: my-animation 25s linear infinite;
+        animation: my-animation 25s linear infinite;
+        }
+    }
+.patient-main{
+    .patient-body{
+        overflow: hidden;
+    .patient-buttons{
+        transform: scale(1.4);
+        background-size: 80vw 50vh;
+        margin-top: 10vh;     
+        .patient-progress{
+            button{
+                padding: 20px;
+                margin: 30px;
+            }
+        }
+    }
+        .patient-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 20vh;
+            button{
+                font-size: 0.8em;
+                color: #000d31;
+                padding: 15px;
+                margin: 2px;
+                border-radius: 20px;
+                border: none;
+                cursor: pointer;
+                -webkit-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+                -moz-box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+                box-shadow: inset 0px 0px 7px 4px rgba(0,0,0,0.75);
+                transition: transform 0.3s;
+                &:hover {
+                    background-color: #ffda73;
+                        }
+                &:active {
+                    transform: scale(0.98)
+                    } 
+            }
+        }   
+       
+    }
+   
+    .leave-portal{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 2vh;
+        margin-left: 2vw;
+    }  
+    .appointment-calendar{
+        height: 150px;
+        width: 150px;
+        bottom: 3vh;
+        right: 0;
+        margin-right: 3vw;
+    }
+    .hosp-icon{
+        height: 150px;
+        width: 150px;
+        bottom: 3vh;
+        right: 0;
+        margin-right:20vw;
+    }
+
+}
+
+  
+}
+
+//Desktop (general)
+@media (min-width: 922px){
+
+    .patient-main{
+        background: linear-gradient(to right,#000d31, #011652, rgba(0, 25, 99, 0.9803921569), #011652,#000d31,);
+        padding: 20px;
+        height: 100vh;
+        overflow: hidden; 
+        .patient-body{
+            h3{
+                color: white;
+                font-weight: 400;
+                text-align: right;
+                padding-right: 20px;
+                padding-top: 10px;
+            }
+        
+            .patient-buttons{
+                transform: scale(1);
+                margin-top: 0vh;
+                background-size: cover;
+                border-radius: 300px;
+                .skin-changer{
+                    height: 200px;
+                    width: 200px;
+                    border-radius: 360px;  
+                    margin-top: -1vh;      
+                }
+        
+                .patient-progress{
+                    button{
+                        padding: 25px;            
+                        font-size: 1em;
+                        margin-top: 3vh;
+                        margin-bottom: 5vh;
+                    }
+                }
+    
+                .patient-info{
+                    button{
+                        font-size: 1em;
+                        color: #000d31;
+                        padding: 20px;
+                        margin: 5px;
+                    }
+                }   
+            }
+          
+        } 
+ 
+        .appointment-calendar{
+            height: 150px;
+            width: 150px;
+            bottom: 3vh;
+            right: 0;
+            margin-right: 3vw;
+        }
+        .hosp-icon{
+            height: 150px;
+            width: 150px;
+            bottom: 3vh;
+            right: 0;
+            margin-right:15vw;
+        }
+           
+    .leave-portal{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0.5vh;
+        margin-left: 0.2vw;
+    } 
+       
+    }
+
+}
+
+

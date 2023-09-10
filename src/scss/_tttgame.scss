@@ -1,0 +1,44 @@
+
+  .status {
+    margin-bottom: 10px;
+    color: white;
+    top: 0;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+
+  .moves{
+    color: yellow;
+  }
+  
+  .move-button{
+    background-color:transparent;
+    border: none;
+    color: white;
+
+  }
+
+  
+ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
